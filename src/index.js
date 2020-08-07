@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import SweetAlert from 'react-bootstrap-sweetalert';
 import * as THREE from "three";
 
 class App extends Component {
+  
   componentDidMount() {
+     
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(
       75,
@@ -39,9 +42,25 @@ class App extends Component {
 
     animate();
   }
+ 
+ App() {
+    return (
+      <div>
+        <SweetAlert
+  success
+  title="Woot!"
+  onConfirm={this.hideAlert}
+>
+  I did it!
+</SweetAlert>
+      </div>
+    )
+    }
+
   render() {
     return <div ref={ref => (this.mount = ref)} />;
   }
+  
 }
 
 const rootElement = document.getElementById("root");
