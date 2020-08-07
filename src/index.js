@@ -28,6 +28,7 @@ class App extends Component {
 
     camera.position.z = 5;
     this.controls = new OrbitControls(camera, renderer.domElement);
+    scene.add(this.controls)
     var animate = function() {
       requestAnimationFrame(animate);
 
