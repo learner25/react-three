@@ -31,8 +31,8 @@ class App extends Component {
     scene.add(controls)
     var animate = function() {
       requestAnimationFrame(animate);
-      cube.rotation.x+=0.10
-      cube.rotation.y+=0.10
+      cube.rotation.x+=0.010
+      cube.rotation.y+=0.010
       
       renderer.render(scene, camera);
     };
