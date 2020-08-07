@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-import Modal from 'react-awesome-modal';
+
 import * as THREE from "three";
 import swal from 'sweetalert';
 
