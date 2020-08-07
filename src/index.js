@@ -27,7 +27,7 @@ class App extends Component {
     scene.add(cube);
 
     camera.position.z = 5;
-    var controls = new OrbitControls(camera, renderer.domElement);
+    this.controls = new OrbitControls(camera, renderer.domElement);
     var animate = function() {
       requestAnimationFrame(animate);
 
