@@ -2,6 +2,7 @@
   "name": "hola-react",
   "version": "1.0.0",
   "description": "",
+  "license": "(MIT OR Apache-2.0)" ,
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -18,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-project": "node build-project.js"
   },
   "browserslist": [
     ">0.2%",
