@@ -43,7 +43,8 @@ class App extends Component {
     animate();
   }
  
- App() {
+ constructor(props) {
+   super(props)
     return (
       <div>
         <SweetAlert
